@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 
@@ -36,7 +37,7 @@ int main() {
     sort(vec.rbegin(), vec.rend());
 
     // Вставляем произвольный элемент в вектор, не нарушая сортировку
-    int new_element = 100;
+    int new_element = 50;
     vec.insert(upper_bound(vec.begin(), vec.end(), new_element, greater<int>()), new_element);
 
     // Определяем индекс заданного элемента
